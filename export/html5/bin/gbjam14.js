@@ -940,7 +940,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "8";
+	app.meta.h["build"] = "9";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "gbjam14";
 	app.meta.h["name"] = "gbjam14";
@@ -5395,6 +5395,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			text.set_y((flixel_FlxG.height - text.get_height()) / 2);
 		}
 		this.add(text);
+		var sprite2 = new flixel_FlxSprite(0,0,"assets/images/playerFront.png");
+		if(17 == 1 || 17 == 17) {
+			sprite2.set_x((flixel_FlxG.width - sprite2.get_width()) / 2);
+		}
+		if(17 == 16 || 17 == 17) {
+			sprite2.set_y((flixel_FlxG.height - sprite2.get_height()) / 2);
+		}
+		this.add(sprite2);
 	}
 	,update: function(elapsed) {
 		flixel_FlxState.prototype.update.call(this,elapsed);

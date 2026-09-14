@@ -11,6 +11,10 @@ class PlayState extends FlxState
 		var text = new flixel.text.FlxText(0, 0, 0, "Hello World", 64);
 		text.screenCenter();
 		add(text);
+
+		var sprite2 = new flixel.FlxSprite(0, 0, "assets/images/playerFront.png");
+		sprite2.screenCenter();
+		add(sprite2);
 	}
 
 	override public function update(elapsed:Float)
