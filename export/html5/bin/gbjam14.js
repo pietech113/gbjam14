@@ -940,7 +940,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "9";
+	app.meta.h["build"] = "12";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "gbjam14";
 	app.meta.h["name"] = "gbjam14";
@@ -3919,7 +3919,7 @@ openfl_display_Sprite.prototype = $extend(openfl_display_DisplayObjectContainer.
 });
 var Main = function() {
 	openfl_display_Sprite.call(this);
-	this.addChild(new flixel_FlxGame(0,0,flixel_util_typeLimit_InitialState.fromType(PlayState)));
+	this.addChild(new flixel_FlxGame(160,144,flixel_util_typeLimit_InitialState.fromType(MenuState)));
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = "Main";
@@ -5378,22 +5378,19 @@ flixel_FlxState.prototype = $extend(flixel_group_FlxTypedContainer.prototype,{
 	,__class__: flixel_FlxState
 	,__properties__: $extend(flixel_group_FlxTypedContainer.prototype.__properties__,{get_subStateClosed:"get_subStateClosed",get_subStateOpened:"get_subStateOpened",set_bgColor:"set_bgColor",get_bgColor:"get_bgColor"})
 });
-var PlayState = function() {
+var MenuState = function() {
+	this.gameTitle = "Game Title Here";
 	flixel_FlxState.call(this);
 };
-$hxClasses["PlayState"] = PlayState;
-PlayState.__name__ = "PlayState";
-PlayState.__super__ = flixel_FlxState;
-PlayState.prototype = $extend(flixel_FlxState.prototype,{
-	create: function() {
+$hxClasses["MenuState"] = MenuState;
+MenuState.__name__ = "MenuState";
+MenuState.__super__ = flixel_FlxState;
+MenuState.prototype = $extend(flixel_FlxState.prototype,{
+	gameTitle: null
+	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
-		var text = new flixel_text_FlxText(0,0,0,"Hello World",64);
-		if(17 == 1 || 17 == 17) {
-			text.set_x((flixel_FlxG.width - text.get_width()) / 2);
-		}
-		if(17 == 16 || 17 == 17) {
-			text.set_y((flixel_FlxG.height - text.get_height()) / 2);
-		}
+		var text = new flixel_text_FlxText(0,20,0,this.gameTitle,8);
+		text.set_alignment("center");
 		this.add(text);
 		var sprite2 = new flixel_FlxSprite(0,0,"assets/images/playerFront.png");
 		if(17 == 1 || 17 == 17) {
@@ -5407,7 +5404,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,update: function(elapsed) {
 		flixel_FlxState.prototype.update.call(this,elapsed);
 	}
-	,__class__: PlayState
+	,__class__: MenuState
 });
 var Reflect = function() { };
 $hxClasses["Reflect"] = Reflect;
