@@ -30,4 +30,8 @@ export/html5/bin/flixel/fonts/nokiafc22
 export/html5/bin/flixel/fonts/monsterrat
 export/html5/bin/flixel/images/ui/button.png
 export/html5/bin/flixel/images/logo/default.png
+export/html5/bin/flixel/images/transitions/circle.png
+export/html5/bin/flixel/images/transitions/diagonal_gradient.png
+export/html5/bin/flixel/images/transitions/diamond.png
+export/html5/bin/flixel/images/transitions/square.png
 export/html5/bin/manifest/default.json

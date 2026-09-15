@@ -940,7 +940,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "12";
+	app.meta.h["build"] = "13";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "gbjam14";
 	app.meta.h["name"] = "gbjam14";
@@ -5389,17 +5389,17 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	gameTitle: null
 	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
-		var text = new flixel_text_FlxText(0,20,0,this.gameTitle,8);
-		text.set_alignment("center");
-		this.add(text);
-		var sprite2 = new flixel_FlxSprite(0,0,"assets/images/playerFront.png");
+		var titleText = new flixel_text_FlxText(0,20,0,this.gameTitle,8);
+		titleText.set_alignment("center");
+		this.add(titleText);
+		var startText = new flixel_text_FlxText(0,0,0,"Press Start (Space)",6);
 		if(17 == 1 || 17 == 17) {
-			sprite2.set_x((flixel_FlxG.width - sprite2.get_width()) / 2);
+			startText.set_x((flixel_FlxG.width - startText.get_width()) / 2);
 		}
 		if(17 == 16 || 17 == 17) {
-			sprite2.set_y((flixel_FlxG.height - sprite2.get_height()) / 2);
+			startText.set_y((flixel_FlxG.height - startText.get_height()) / 2);
 		}
-		this.add(sprite2);
+		this.add(startText);
 	}
 	,update: function(elapsed) {
 		flixel_FlxState.prototype.update.call(this,elapsed);
@@ -87668,7 +87668,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 631982;
+	this.version = 560380;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
