@@ -1,4 +1,5 @@
 export/neko/bin/assets/data/data-goes-here.txt
+export/neko/bin/assets/data/grass1.aseprite
 export/neko/bin/assets/data/hatidea.aseprite
 export/neko/bin/assets/data/mapScreen.aseprite
 export/neko/bin/assets/data/Placeholder.aseprite
@@ -10,6 +11,7 @@ export/neko/bin/assets/data/playerSideWalking.aseprite
 export/neko/bin/assets/data/textBox.aseprite
 export/neko/bin/assets/data/townIcon.aseprite
 export/neko/bin/assets/data/townIconActive.aseprite
+export/neko/bin/assets/images/grass1.png
 export/neko/bin/assets/images/images-go-here.txt
 export/neko/bin/assets/images/mapScreen.png
 export/neko/bin/assets/images/placeholder.png
@@ -28,4 +30,8 @@ export/neko/bin/flixel/fonts/nokiafc22.ttf
 export/neko/bin/flixel/fonts/monsterrat.ttf
 export/neko/bin/flixel/images/ui/button.png
 export/neko/bin/flixel/images/logo/default.png
+export/neko/bin/flixel/images/transitions/circle.png
+export/neko/bin/flixel/images/transitions/diagonal_gradient.png
+export/neko/bin/flixel/images/transitions/diamond.png
+export/neko/bin/flixel/images/transitions/square.png
 export/neko/bin/manifest/default.json
