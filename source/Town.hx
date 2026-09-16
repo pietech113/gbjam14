@@ -5,7 +5,7 @@ class Town {
 
     public function new(name, map, walls) {
         this.name = name;
-        this.map = map;
-        this.walls = walls;
+        //this.map = map;
+        //this.walls = walls;
     }
 }
