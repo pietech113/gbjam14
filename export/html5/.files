@@ -1,7 +1,12 @@
+export/html5/bin/assets/data/cart.aseprite
 export/html5/bin/assets/data/data-goes-here.txt
 export/html5/bin/assets/data/grass1.aseprite
 export/html5/bin/assets/data/hatidea.aseprite
 export/html5/bin/assets/data/mapScreen.aseprite
+export/html5/bin/assets/data/path1.aseprite
+export/html5/bin/assets/data/path1corner.aseprite
+export/html5/bin/assets/data/path2.aseprite
+export/html5/bin/assets/data/path2corner.aseprite
 export/html5/bin/assets/data/Placeholder.aseprite
 export/html5/bin/assets/data/playerFront.aseprite
 export/html5/bin/assets/data/playerFrontWalk.aseprite
@@ -11,9 +16,14 @@ export/html5/bin/assets/data/playerSideWalking.aseprite
 export/html5/bin/assets/data/textBox.aseprite
 export/html5/bin/assets/data/townIcon.aseprite
 export/html5/bin/assets/data/townIconActive.aseprite
+export/html5/bin/assets/images/cart.png
 export/html5/bin/assets/images/grass1.png
 export/html5/bin/assets/images/images-go-here.txt
 export/html5/bin/assets/images/mapScreen.png
+export/html5/bin/assets/images/path1.png
+export/html5/bin/assets/images/path1corner.png
+export/html5/bin/assets/images/path2.png
+export/html5/bin/assets/images/path2corner.png
 export/html5/bin/assets/images/placeholder.png
 export/html5/bin/assets/images/playerFront.png
 export/html5/bin/assets/images/PlayerFrontWalk.png

@@ -1,6 +1,8 @@
 import flixel.FlxState;
 
 class Town1State extends FlxState {
-    var town1:Town;
-    
+    public var town1:Town = new Town(
+        "Town 1"
+        ,new SceneGrid()
+    );
 }
